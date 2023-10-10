@@ -20,10 +20,10 @@ npm install webpack-bundle-analyzer --save-dev
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 // Append to the plugins array.
-new BundleAnalyzerPlugin({
+config.plugins.push(new BundleAnalyzerPlugin({
     analyzerMode: 'static',
     generateStatsFile: true,
-}),
+}));
 ```
 
 3. Generate the report (you will find it on `www/report.html`):
