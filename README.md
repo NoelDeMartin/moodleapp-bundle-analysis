@@ -29,5 +29,5 @@ config.plugins.push(new BundleAnalyzerPlugin({
 3. Generate the report (you will find it on `www/report.html`):
 
 ```sh
-npx ng build --prod --stats-json
+NODE_OPTIONS=--max-old-space-size=8192 npx ng build --configuration production --stats-json
 ```
